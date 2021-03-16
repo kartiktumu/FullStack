@@ -1,0 +1,48 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <form>
+           Username: <input type="text" id="uname">
+           <button onclick="f1()">Submit</button>
+        </form>
+
+      
+        <script>
+            
+            
+
+            function f1()
+                {
+                    event.preventDefault();
+                    var x = document.getElementById("uname").value;
+                    var array = ["ravi","kiran","rajesh"];
+                    var isuserFound = false;
+                    array.forEach(function(name)
+                        {
+                            var y = name;
+                            
+                            if(x == y)
+                                {
+                                    isuserFound = true;
+                                }
+                            
+                        })
+
+
+                        if(isuserFound == true)
+                            {
+                                alert ("Name is not available");
+                            }
+                        else
+                            {
+                                alert ("Name is available");
+                            }
+                        
+                    
+                }
+            
+        </script>
+    </body>
+</html>

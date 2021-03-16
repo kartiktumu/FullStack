@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form id="registeration">
+            Username: <input type="text"  id="uname"> <br><br>
+            Password: <input type="text" id="password"> <br><br>
+            Mobile Number: <input type="text" id="mnumber"><br><br>
+            Description: <input type="text" id="descr"><br><br>
+            <button onclick="registeration()">Submit</button>
+        </form>
+        <script>
+            function registeration()
+                {
+                   var a = document.getElementById("uname").value;
+                   var b = document.getElementById("password").value;
+                   var c =  document.getElementById("mnumber").value;
+                   var d =  document.getElementById("descr").value;
+                
+                    var obj1 = 
+                    {
+                        user1 : a,
+                        pass1 : b,
+                        email : c,
+                        description: d,
+                    }                  
+                    alert("Username is: " + obj1.user1 +"\n"+ "Password is: " + obj1.pass1+"\n"+ "Email-Id is: " + obj1.email +"\n" + "Description is: " + obj1.description);
+
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            CEO: <input type="text" id="ceo"><br><br>
+            Company: <input type="text" id="company"><br><br>
+            Address: <input type="text" id="address"><br><br>
+            <button onclick="content()">SUBMIT</button><br><br><br><br>
+        </form>
+        <h3 id="output"></h3>
+    </body>
+
+    <script>
+
+        function content()
+            {
+                event.preventDefault();
+                var a = document.getElementById("ceo").value;
+                var b = document.getElementById("company").value;
+                var c = document.getElementById("address").value;
+
+                document.getElementById("output").innerHTML = (`
+                Hello ${a},
+            
+                We are reaching your ${b} at ${c}.
+
+                Thanks,
+                Phone pee
+                `)
+            }
+ 
+    </script>
+</html>
+

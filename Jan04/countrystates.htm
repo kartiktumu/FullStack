@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <select id="Countries" onchange="Country_States_Logic()">
+            <option>Select Country</option>
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="Srilanka">Srilanka</option>
+        </select>
+        <select id="Cities">
+            <option>Select City</option>
+        </select>
+        <script>
+            Country_States_Logic()
+            function Country_States_Logic()
+                {
+                    var country_value = document.getElementById("Countries").value;
+                    switch(country_value)
+                    {
+                        case "India":document.getElementById("Cities").innerHTML = ["<option>Andhra Pradesh</option>","<option>Telangana</option>"];break;
+                        case "Canada": document.getElementById("Cities").innerHTML = ["<option>Ontario</option>","<option>Alberta</option>"];break;
+                        case "USA": document.getElementById("Cities").innerHTML = ["<option>Texas</option>","<option>Ohio</option>"];break;
+                        case "Srilanka": document.getElementById("Cities").innerHTML = ["<option>Ampara</option>","<option>Badulla</option>"];break;
+                    }
+                }
+        </script>
+    </body>
+</html>

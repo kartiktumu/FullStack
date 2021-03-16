@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" placeholder="Enter Account Number" onpaste="return checkPaste()" oncopy="return copy()"><span id="msg"></span>
+
+        <script>
+            function checkPaste()
+                {
+                    document.getElementById("msg").innerHTML=" paste is not possible";
+                    return false;
+                }
+          
+            function copy()
+                {
+                    document.getElementById("msg").innerHTML=" copy is not possible";
+                    return false;
+                }
+         
+        </script>
+
+    </body>
+
+</html>

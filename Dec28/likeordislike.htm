@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <i class="fa fa-thumbs-up" onclick="like_fun()" style= "font-size:100px; color:gray"></i> <span id="like_id">0</span> &nbsp;
+        <i class="fa fa-thumbs-down" onclick="dislike_fun()" style="font-size:100px; color:gray"></i> <span id="dislike_id">0</span> &nbsp; 
+
+        <script>
+            var like = 0;
+            var dislike = 0; 
+
+            function like_fun()
+                {
+                    if(like >= 0 )
+                        {
+                            like = like+1;
+                            if (dislike!=0)
+                                {
+                                    dislike = dislike-1;
+                                }
+                            else
+                                {
+                                    dislike=0;
+                                }
+
+                            document.getElementById("like_id").innerHTML=like; 
+                            document.getElementById("dislike_id").innerHTML=dislike; 
+
+                        }
+                       
+                }
+
+             function dislike_fun()
+                {
+                    if (dislike >= 0)
+                        {
+                            dislike = dislike+1;
+                             if (like !=0)
+                                {
+                                    like=like-1;
+                                }
+                             else
+                                {
+                                    like = 0;
+                                }
+                            document.getElementById("dislike_id").innerHTML=dislike; 
+                            document.getElementById("like_id").innerHTML=like; 
+
+                        }
+                                       
+                }
+
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <body>
+            <select id="menu" onchange="menu_selection()">
+                <option value="icecream">Icecream</option>
+                <option value="Biryani">Biryani</option>
+                <option value="Noodles">Noodles</option>
+                <option value="Soup">Soup</option>
+                <option value="Meals">Meals</option>
+            </select>
+            <h1 id="menudetails"></h1>
+            <script>
+                menu_selection();
+                function menu_selection()
+                    {
+                        var menu_value = document.getElementById("menu").value;
+                        
+                        switch(menu_value)
+                        {
+                            case "icecream" : document.getElementById("menudetails").innerHTML="Rs.300, Arun";break;
+                            case "Biryani" : document.getElementById("menudetails").innerHTML="Rs.400, Paradise";break;
+                            case "Noodles" : document.getElementById("menudetails").innerHTML="Rs.20, Maagi";break;
+                            case "Soup" : document.getElementById("menudetails").innerHTML="Rs.40, Chopsticks";break;
+                            case "Meals" : document.getElementById("menudetails").innerHTML="Rs.80, Kakatiya";break;
+                        }
+
+                    }
+            </script>
+
+        </body>
+    </head>
+</html>

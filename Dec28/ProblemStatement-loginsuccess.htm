@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 style="color: brown;text-align:center ">Login Page </h1>
+        
+        <form id = "login_form">
+            <label>Username : </label><input type="text" id="Username"> <br><br>
+            <label>Password : </label><input type="password" id="Password"><br><br>
+            <button onclick="login()">Submit</button><span></span>
+        </form>
+
+        <script>
+            var user;
+            var pass;
+            function login()
+                {
+                    user = document.getElementById("Username").value;
+                    pass = document.getElementById("Password").value;
+
+                    alert("Username is: " + user + "\n" + "Password is: " + pass);
+                }
+        </script>
+    
+    </body>
+</html>

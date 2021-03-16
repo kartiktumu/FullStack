@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            Username : <input type = "text" id = "user_name">
+            Password : <input type = "text" id = "pass">
+            <button onclick="logindetails()">Submit</button>
+        </form>
+
+        <script>
+            function Login(user,pass)
+                {
+                    this.Login_username = user;
+                    this.Login_password = pass;
+                }
+
+            function logindetails()
+                {
+                    event.preventDefault();
+                    var user1 = document.getElementById("user_name").value;
+                    var pass1 = document.getElementById("pass").value;
+                    var l1 = new Login(user1,pass1);
+                    alert(l1);
+                }
+        </script>
+    </body>
+</html>

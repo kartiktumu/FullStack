@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+            var products=[
+                {
+                    id:101,
+                    name: "Product1",
+                    brand:"brand1",
+                    category: "Category 1"
+                },
+                {
+                    id:102,
+                    name: "Product2",
+                    brand:"brand1",
+                    category: "Category 1"
+                },
+                {
+                    id:103,
+                    name: "Product3",
+                    brand:"brand1",
+                    category: "Category 1"
+                },
+                {
+                    id:104,
+                    name: "Product4",
+                    brand:"brand1",
+                    category: "Category 1"
+                },
+                {
+                    id:105,
+                    name: "Product5",
+                    brand:"brand1",
+                    category: "Category 1"
+                }
+        ]
+        </script>
+    </head>
+    <body>
+        <table>
+            <tbody id="prods"></tbody>
+        </table>
+
+
+        <script>
+
+                    var tbody = document.getElementById('tbody');
+
+                    for (var i = 0; i < products.length; i++) 
+                    {
+                        var tr = "<tr>";
+                        tr += "<td>" + products[i].name + "</td>" + "<td>" + products[i].brand + "</td>" + "<td>" + products[i].category + "</td></tr>";
+                        tbody.innerHTML += tr;
+                    }
+                
+          
+
+        </script>
+    </body>
+</html>

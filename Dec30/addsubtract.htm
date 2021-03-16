@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 style="color: brown;text-align:center ">Adding & Subtraction </h1>
+        
+        <form id = "login_form">
+            <label>Field1 : </label><input type="number" id="f1"> <br><br>
+            <label>Field2 : </label><input type="number" id="f2"><br><br>
+            <button onclick="add()">Add</button>
+            <button onclick="sub()">Subtract</button>
+        </form>
+
+        <script>
+            function add()
+                {
+                    var val1 = document.getElementById("f1").valueAsNumber;
+                    var val2 = document.getElementById("f2").valueAsNumber;
+                    var addition = val1+val2
+                    alert(addition);
+                }
+                function sub()
+                {
+                    val1 = document.getElementById("f1").valueAsNumber;
+                    val2 = document.getElementById("f2").valueAsNumber;
+                    var subtraction = val1 - val2;
+                    alert(subtraction);
+                }
+        </script>
+
+                            
+              
+    
+    </body>
+</html>
